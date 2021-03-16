@@ -16,7 +16,7 @@ public class Launch_Browser
 			if(browser_Type.equals("chrome"))
 			{
 				
-				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "G:\\Parbank\\Drivers\\chromedriver.exe");
 				driver = new ChromeDriver();
 				driver.get(Url);
 				
@@ -24,7 +24,7 @@ public class Launch_Browser
 			else if(browser_Type.equals("firefox"))
 			{
 				
-				System.setProperty("weddriver.gecko.driver", "G:\\Kids_Bank_Pom\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "G:\\Kids_Bank_Pom\\Drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				driver.get(Url);
 				
@@ -33,7 +33,7 @@ public class Launch_Browser
 			else if(browser_Type.equals("edge"))
 			{
 				
-				System.setProperty("weddriver.edge.driver", "G:\\Kids_Bank_Pom\\Drivers\\msedgedriver.exe");
+				System.setProperty("webdriver.edge.driver", "G:\\Kids_Bank_Pom\\Drivers\\msedgedriver.exe");
 				driver = new EdgeDriver();
 				driver.get(Url);
 				
