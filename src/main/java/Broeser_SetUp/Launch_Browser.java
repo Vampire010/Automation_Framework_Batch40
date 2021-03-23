@@ -8,9 +8,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Launch_Browser
 {
 
-		public static WebDriver driver;
+	public static  WebDriver driver;
 		
-		public String browsers(String browser_Type, String Url)
+	 String Url ="http://mykidsbank.org";
+
+		public String browsers(String browser_Type , String Url)
 		{
 		
 			if(browser_Type.equals("chrome"))

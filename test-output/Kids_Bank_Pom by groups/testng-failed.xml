@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Kids_Bank_Pom by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-Valid_Cred,INValid_Cred(failed)">
+    <groups>
+      <run>
+        <include name="Valid_Cred"/>
+        <include name="INValid_Cred"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Tests.Login_Test">
+        <methods>
+          <include name="InValid_Reg_TC1"/>
+          <include name="INValid_Reg_TC2"/>
+          <include name="Valid_Reg_TC1"/>
+        </methods>
+      </class> <!-- Tests.Login_Test -->
+    </classes>
+  </test> <!-- GRP-Valid_Cred,INValid_Cred(failed) -->
+</suite> <!-- Failed suite [Kids_Bank_Pom by groups] -->

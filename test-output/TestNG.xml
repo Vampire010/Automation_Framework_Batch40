@@ -2,12 +2,19 @@
   
 <suite name="Suite1" verbose="1" >
   <test name="Regression1">
+    <groups>
+
+ 			<run>
+				<include name="regtest" />
+				<exclude name ="smoketest" />
+			</run>
+			
+	</groups>
+           
     <classes>
-      <class name="TestNg_Example.NewTest">  
-      		<methods>
-        		<include name="Snapdeal" />        		
-      		</methods>
-      </class>	  
+   
+      <class name="Tests.TestNg_Groups"/>        		      	  
+   
     </classes>
   </test>
  
